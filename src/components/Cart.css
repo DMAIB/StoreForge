@@ -1,0 +1,105 @@
+.cart {
+    max-width: 800px; /* Максимальная ширина корзины */
+    margin: 20px auto; /* Центрирует корзину на странице с отступом сверху и снизу */
+    padding: 20px; /* Отступы внутри корзины */
+    background-color: #ffffff; /* Белый цвет фона для корзины */
+    border-radius: 10px; /* Закругленные углы для корзины */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Более выраженная тень для корзины */
+    transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+}
+
+
+
+.cart-item {
+    display: flex; /* Использует flexbox для размещения элементов */
+    align-items: center; /* Центрирует элементы по вертикали */
+    border: 1px solid #e0e0e0; /* Светлая рамка вокруг элемента */
+    border-radius: 8px; /* Закругленные углы для элемента корзины */
+    background-color: #f9f9f9; /* Цвет фона для элемента корзины */
+    margin: 15px 0; /* Отступы между элементами корзины */
+    padding: 15px; /* Отступы внутри элемента корзины */
+    transition: box-shadow 0.3s; /* Плавный переход для тени */
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень при наведении на элемент */
+}
+
+.cart-item img {
+    width: 120px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 5px; /* Закругленные углы изображения */
+    margin-right: 15px; /* Отступ между изображением и текстом */
+}
+
+.cart-item h3 {
+    margin: 0; /* Убирает отступы у заголовка */
+    font-size: 1.5em; /* Увеличенный размер шрифта заголовка */
+    color: #333; /* Темный цвет текста заголовка */
+}
+
+.cart-item p {
+    margin: 5px 0; /* Отступы для параграфов */
+    font-size: 1.25em; /* Размер шрифта для цены */
+    color: #28a745; /* Зеленый цвет для цены */
+    font-weight: bold; /* Жирный текст */
+    padding: 5px; /* Отступ внутри параграфа */
+    border-radius: 5px; /* Закругленные углы */
+    background-color: rgba(40, 167, 69, 0.1); /* Полупрозрачный фон для выделения цены */
+    margin-left: 10px;
+}
+
+.cart-item button {
+    background-color: #ff4d4d; /* Цвет кнопки удаления */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убирает рамку кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    margin-left: auto; /* Отталкивает кнопку вправо */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+.cart-item button:hover {
+    background-color: #e60000; /* Темнее цвет кнопки при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.clear-cart-button {
+    background-color: #007bff; /* Цвет кнопки очистки корзины */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+.clear-cart-button:hover {
+    background-color: #0056b3; /* Темнее цвет кнопки очистки при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.buy-button {
+    background-color: #ffc700; /* Зеленый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Увеличен отступ по горизонтали для ширины */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+    margin-top: 30px; /* Отступ сверху */
+    width: 100%; /* Ширина кнопки на всю доступную ширину родителя */
+    max-width: 200px; /* Максимальная ширина кнопки */
+    display: block; /* Блоковое отображение для центрирования */
+    margin-left: auto; /* Центрирование кнопки по горизонтали */
+    margin-right: auto; /* Центрирование кнопки по горизонтали */
+    height: 40px;
+}
+
+.buy-button:hover {
+    background-color: #000000; /* Темнее цвет кнопки при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+
